@@ -103,11 +103,6 @@ header{
     align-items: center;
 }
 
-header nav div{
-    display: flex;
-    justify-items: end;
-}
-
 
 a:hover{
     color: red;
