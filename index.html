@@ -8,53 +8,58 @@
     
     <link rel="stylesheet" href="CSS/style.css">
 
-    <title>entregable-dos</title>
+    <!-- Link de Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>entregable-tres</title>
 </head>
 
 
 <body>
 
     <header>
-        <img src="img/logo-4.jpg" alt="logo-empresa">
+        <img src="img/logo-bueno.png" alt="logo-empresa">
 
+        <!-- Nav Traido desde Bootstrap -->
 
-          <!-- Paginas seleccionables -->
-
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html" class="seleccionable-1">Inicio</a>
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <a href="pages/productos.html" class="seleccionable-1">Productos</a>
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-            <a href="pages/contacto.html" class="seleccionable-1">Contacto</a> 
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-            <a href="pages/sugerencias.html" class="seleccionable-1">Sugerencias</a>
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <a href="pages/nosotros.html" class="seleccionable-1">Sobre Nosotros</a>
-            </li>
-        </ul>
-
+        <nav class="navbar navbar-expand-lg fondo-bg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="pages/nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sobre nosotros
+                    </a>
+                    <ul class="dropdown-menu dropdown-bg">
+                      <li><a class="dropdown-item hover-color" href="pages/nosotros.html">Historia</a></li>
+                      <li><a class="dropdown-item hover-color" href="pages/nosotros.html">Crecimiento</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item hover-color" href="pages/nosotros.html">Ayuda Medioambiente</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true" href="pages/sugerencias.html">Sugerencias</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </nav>   
     </header> 
 
      <!-- Nombre Compañia-->
+
     <p class="nombre-empresa">
         ROPACOL
     </p>
@@ -72,10 +77,18 @@
                 Te invitamos a dar click <a href="pages/nosotros.html">Aqui</a> para que conozcas mas sobre nosotros
             </div>
         </p>
-        <div class="segundo-texto-main">
+        <div class="primer-1">
             Te invitamos a reproducir este video para que juntos entendamos esta problematica que nos afecta hoy en dia.
         </div>  
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/0kVDaNoJISE?si=Aqcy6C7jNE0cvdZv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <div 
+
+    style="text-align:center;" >
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0kVDaNoJISE?si=Aqcy6C7jNE0cvdZv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe class="video-princi">
+
+    </div>        
+ 
+     
 
 
 
@@ -90,6 +103,10 @@
         Todos los derechos reservados
 
     </footer>
+
+       <!-- Script JS -->
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
 </body>
 </html>

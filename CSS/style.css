@@ -1,4 +1,11 @@
 
+/* Reset */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header{
     background-color:#f5deb3;
@@ -9,17 +16,25 @@ header{
 /* imagen logo de la pantalla de inicio */
 
 header img{
-    width: 30%;
+    width: 15%;
+    
 }
 
 /* nombre de la empresa */
 
 .nombre-empresa{
-    background-color: #cd853f;
+    background-color: #EB984E;
     font-size: 4rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align:right;
     text-align-last:center;
+
+}
+
+/* Video pagina principal index*/
+
+.video-princi{
+    margin: 100;
 }
 
 /* Boton para seleccionar pestañas regresar al menu principal en las pestañas */
@@ -38,7 +53,7 @@ header ul li a {
 footer{
     font-size: 17px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:#cd853f;
+    background-color:#EB984E;
     text-align: center;
 }
 
@@ -65,7 +80,7 @@ footer{
 /* Parrafo debajo del h1 en pagina principal */
 .primer-1{
     font-size:larger;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:Arial, Helvetica, sans-serif
 }
 
 .primer-2{
@@ -80,31 +95,19 @@ footer{
     font-style: italic;
 }
 
-/* Reset */ 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 /* Flex */ 
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
-
-
 }
 
-nav{
+header nav div{
     display: flex;
-    gap: 20px;
-    text-decoration: none;
-
+    justify-items: end;
 }
+
 
 a:hover{
     color: red;
@@ -119,7 +122,7 @@ body{
 }
 
 main div img{
-    width: 400px
+    width: 350px
 }
 
 main .galeria-img{
@@ -192,6 +195,12 @@ main .img-4-n, main .img-5-n{
     display: none;
 }
 
+header nav{
+    display: grid;
+    justify-items: end;
+}
+   
+
 
 
 main.contenedor{
@@ -242,10 +251,17 @@ main.contenedor{
 }
 
 
-/* estilos utilizados en Bootstrap */
+/* estilos utilizados en Bootstrap menu nav*/
+
+.navbar-expand-lg fondo-bg{
+    display: flex;
+    justify-content: left;
+    align-items:left;
+
+}
 
 .fondo-bg{
-    background-color: #6495ed;
+    background-color: #EB984E;
 }
 
 .dropdown-bg{
