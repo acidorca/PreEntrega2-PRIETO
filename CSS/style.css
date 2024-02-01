@@ -7,8 +7,19 @@
     box-sizing: border-box;
 }
 
+/* Logo principal Index */
+
+.logo-principal{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 header{
+    display: flex;
     background-color:#f5deb3;
+    justify-content: center;
+    height: 300px;   
 }
 
 
@@ -16,8 +27,7 @@ header{
 /* imagen logo de la pantalla de inicio */
 
 header img{
-    width: 15%;
-    
+    width: 15%; 
 }
 
 /* nombre de la empresa */
@@ -37,7 +47,7 @@ header img{
     margin: 100;
 }
 
-/* Boton para seleccionar pestañas regresar al menu principal en las pestañas */
+Boton para seleccionar pestañas regresar al menu principal en las pestañas
 
 header ul li{
     list-style-type: none;
