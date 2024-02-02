@@ -1,2 +1,6 @@
-$color-primario: crimson;
+// import de archivos secundarios
+
+@import "utilidades/reset";
+@import "utilidades/variables";
+@import "HTML/home";
 

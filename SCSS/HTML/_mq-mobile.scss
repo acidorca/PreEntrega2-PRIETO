@@ -1,0 +1,16 @@
+//Estilos MQ Mobile
+
+@media screen and (min-width:350px){
+    body{
+        background-color:none;
+    }
+    main{
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(2);
+    }
+
+    main div .img-2-n{
+        grid-column: span 2;
+    }
+
+}

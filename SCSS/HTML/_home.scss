@@ -1,0 +1,136 @@
+@import "../Utilidades/variables";
+
+// Nesting
+
+header{
+    background-color:#f5deb3;
+    height: 160px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    nav{
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 17px;
+                    background-color:$color-usado1;
+                    border-radius: 30px;  
+                }
+            }
+        }
+    }
+    img{
+        height: 160px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+}
+
+main{
+    text-align: none;
+    div{
+        img{
+            width: 320px;
+        }
+    }
+    .galeria-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+        .productos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:cadetblue;
+            border-radius: 30px;
+            padding:15px;
+            box-shadow: 3px 3px grey;
+            .boton{
+                background-color: tomato;
+                padding: 15px;
+                border-radius: 30px;
+                margin-top: 10px;
+                box-shadow: 4px 5px 10px $color-usado1;
+                color: white;
+                text-shadow: 1px 1px 5px $color-usado1;
+                justify-content: center;
+            }
+        }
+    }
+    .galeria-img-c{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .productos-c{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color:cadetblue;
+            border-radius: 30px;
+            padding:15px;
+            box-shadow: 3px 3px grey;
+            align-items: center;
+            .boton-c{
+                background-color: tomato;
+                padding: 15px;
+                border-radius: 30px;
+                margin-top: 10px;
+                box-shadow: 4px 5px 10px $color-usado1;
+                color: white;
+                text-shadow: 1px 1px 5px $color-usado1;
+            }
+        }
+    }
+    .img-4-n, .img-5-n{
+        display: none;
+    }
+    .contenedor{
+        width: 70vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3);
+        gap: 30px;
+        margin: 30px 20px;
+    }
+
+
+}
+
+.nombre-empresa{
+    background-color: $color-background;
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:right;
+    text-align-last:center;
+}
+
+footer{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#EB984E;
+    text-align: center;
+}
+
+// importación de la MQ
+
+/* MQ Tablet */
+@import "mq-tablet";
+
+/* MQ Desktop */
+@import "mq-desktop";
+
+/* MQ Mobile */
+@import "mq-mobile";
+
+
+
+
+
