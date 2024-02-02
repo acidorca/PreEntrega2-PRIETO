@@ -7,19 +7,13 @@
     box-sizing: border-box;
 }
 
-/* Logo principal Index */
-
-.logo-principal{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 header{
-    display: flex;
     background-color:#f5deb3;
+    height: 160px;   
+    display: flex;
     justify-content: center;
-    height: 300px;   
+    align-items: center;
 }
 
 
@@ -27,7 +21,12 @@ header{
 /* imagen logo de la pantalla de inicio */
 
 header img{
-    width: 15%; 
+    height: 160px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* nombre de la empresa */
@@ -47,7 +46,7 @@ header img{
     margin: 100;
 }
 
-Boton para seleccionar pestañas regresar al menu principal en las pestañas
+/* Boton para seleccionar pestañas regresar al menu principal en las pestañas */
 
 header ul li{
     list-style-type: none;
@@ -95,7 +94,8 @@ footer{
 
 .primer-2{
     font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
 /* Segundo texto antes del video de la pagina principal */
@@ -105,14 +105,20 @@ footer{
     font-style: italic;
 }
 
-/* Flex */ 
+.texto-area{
+    display:grid;
+    vertical-align:end;
+    justify-items: center;
+  }
 
-header{
-    display: flex;
-    justify-content: left;
-    align-items: center;
+.texto-area-boton{
+    display:inline-block;
+    vertical-align:middle;
 }
 
+  
+
+/* Flex */ 
 
 a:hover{
     color: red;
@@ -123,11 +129,11 @@ main{
 }
 
 body{
-    background-color: #f5deb3;
+    background-color: none;
 }
 
 main div img{
-    width: 350px
+    width: 320px
 }
 
 main .galeria-img{
@@ -194,6 +200,7 @@ main .galeria-img-c .productos-c .boton-c{
     text-shadow: 1px 1px 5px black;
 }
 
+
 /* Grid */
 
 main .img-4-n, main .img-5-n{
@@ -217,11 +224,12 @@ main.contenedor{
     margin: 30px 20px;
 }
 
-/* Estilos de Tablet */
 
-@media screen and (min-width:600px){
+/* Estilos MQ Mobile */
+
+@media screen and (min-width:350px){
     body{
-        background-color:cadetblue;
+        background-color:none;
     }
     main{
         grid-template-columns: repeat(2);
@@ -234,11 +242,28 @@ main.contenedor{
 
 }
 
-/* Estilos Desktop */
+/* Estilos MQ Tablet */
+
+@media screen and (min-width:600px){
+    body{
+        background-color:none;
+    }
+    main{
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(2);
+    }
+
+    main div .img-2-n{
+        grid-column: span 2;
+    }
+
+}
+
+/* Estilos MQ Desktop */
 
 @media screen and (min-width:1024px){
     body{
-        background-color:darksalmon;
+        background-color:none;
     }
     main .img-4-n, main .img-5-n{
         display: block;
