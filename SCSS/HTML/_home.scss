@@ -1,4 +1,5 @@
 @import "../Utilidades/variables";
+@import "../Utilidades/listas";
 
 // Nesting
 
@@ -63,6 +64,7 @@ main{
                 justify-content: center;
             }
         }
+        
     }
     .galeria-img-c{
         display: flex;
@@ -93,7 +95,7 @@ main{
         display: none;
     }
     .contenedor{
-        width: 70vh;
+        @include sizes(70vh);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3);
@@ -115,7 +117,7 @@ main{
 footer{
     font-size: 17px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:#EB984E;
+    background-color: #EB984E;
     text-align: center;
 }
 
@@ -131,6 +133,15 @@ footer{
 @import "mq-mobile";
 
 
+
+// mixins
+
+@mixin sizes($width){
+    width: $width;
+}
+
+
+@include sizes()
 
 
 
