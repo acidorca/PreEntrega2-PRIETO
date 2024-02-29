@@ -124,7 +124,6 @@ footer {
     grid-column: span 2;
   }
 }
-
 /* MQ Desktop */
 @media screen and (min-width: 1024px) {
   body {
@@ -140,7 +139,6 @@ footer {
     grid-row: span;
   }
 }
-
 /* MQ Mobile */
 @media screen and (min-width: 350px) {
   body {

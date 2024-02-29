@@ -125,6 +125,7 @@ a:hover{
 }
 
 main{
+    margin: 30px;
     text-align: none;
 }
 
@@ -213,8 +214,6 @@ header nav{
 }
    
 
-
-
 main.contenedor{
     width: 70vh;
     display: grid;
@@ -283,7 +282,7 @@ main.contenedor{
 
 /* estilos utilizados en Bootstrap menu nav*/
 
-.navbar-expand-lg fondo-bg{
+.navbar-expand-lg {
     display: flex;
     justify-content: left;
     align-items:left;
@@ -295,17 +294,17 @@ main.contenedor{
 }
 
 .dropdown-bg{
-    background-color: #d3d3d3;
+    background-color: #deb887 !important;
 }
  
 .hover-color:hover{
-    background-color: #20b2aa;
-    font-weight: bold;
+    background-color: #20b2aa !important;
+    font-weight: bold !important;
 }
 
 .hover-color:active{
-    background-color: #ffa500;
-    font-weight: bold;
+    background-color: #696969 !important;
+    font-weight: bold !important;
 }
 
 
